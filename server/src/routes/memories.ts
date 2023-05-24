@@ -22,6 +22,7 @@ export async function memoriresRoutes(app: FastifyInstance) {
         id: mem.id,
         coverUrl: mem.coverUrl,
         excerpt: mem.content.substring(0, 115).concat('...'),
+        createdAt: mem.createdAt,
       }
     })
   })
